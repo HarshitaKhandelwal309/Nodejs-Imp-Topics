@@ -57,11 +57,11 @@ mailTransporter.sendMail(sendingDetails)
 })
 })
 
-const port = process.env.PORT | 3000
+const port = process.env.portNo || 3000
 
 app.listen(port, function()
 {
-    console.log("server is on port 3000");
+    console.log("server is on port " , port);
 });
 
 
